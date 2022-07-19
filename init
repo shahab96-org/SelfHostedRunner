@@ -1,5 +1,6 @@
 #!/bin/sh
 
+cd /home/shahab96
 mkdir actions-runner && cd actions-runner
 
 # Download the latest runner package
