@@ -18,6 +18,11 @@ provider "google" {
   zone = "us-west1-a"
 }
 
+provider "google" {
+  project = data.terraform_remote_state.infra.outputs.projects.dogar
+  alias = "dns"
+}
+
 data "terraform_remote_state" "infra" {
   backend = "gcs"
   
